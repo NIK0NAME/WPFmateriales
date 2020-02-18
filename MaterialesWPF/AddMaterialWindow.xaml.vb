@@ -7,6 +7,6 @@
 
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs) Handles button.Click
         mode.nuevoMaterial()
-        Me.Close()
+        'Me.Close()
     End Sub
 End Class

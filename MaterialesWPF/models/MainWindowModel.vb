@@ -24,6 +24,15 @@ Public Class MainWindowModel
         liMateriales = Module1.db.materiales.Select(Function(u) u).ToList()
     End Sub
 
+    Public Sub removeMaterial(m As materiales)
+        Dim allMoves As IEnumerable(Of movimientos) = Module1.db.movimientos.Where(Function(x) x.idMaterial = m.idMaterial).ToList()
+        Module1.db.movimientos.RemoveRange(allMoves)
+        Module1.db.materiales.Remove(m)
+        Module1.db.SaveChanges()
+        liMateriales = Module1.db.materiales.Select(Function(u) u).ToList()
+        OnPropertyChanged(New PropertyChangedEventArgs("ListaMateriales"))
+    End Sub
+
     Public Sub updateLista()
         liMateriales = Module1.db.materiales.Select(Function(u) u).ToList()
         OnPropertyChanged(New PropertyChangedEventArgs("ListaMateriales"))

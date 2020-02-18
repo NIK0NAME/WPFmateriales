@@ -25,4 +25,9 @@ Class MainWindow
         f3.ShowDialog()
         windowModel.updateLista()
     End Sub
+
+    Private Sub LiMats_MouseRightButtonUp(sender As Object, e As MouseButtonEventArgs) Handles liMats.MouseRightButtonUp
+
+        windowModel.removeMaterial(liMats.SelectedItem)
+    End Sub
 End Class
