@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:MaterialesWPF"
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="403.883">
-    <Grid DataContext="{Binding MaterialActual}">
+    <Grid Name="grid1">
         <Label Content="Marca" FontWeight="Bold" HorizontalAlignment="Left" Margin="27,42,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,73,0,0" TextWrapping="Wrap" Text="{Binding marca}" VerticalAlignment="Top" Width="151"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,73,0,0" TextWrapping="Wrap" Text="{Binding MaterialActual.marca}" VerticalAlignment="Top" Width="151"/>
         <Label Content="Descripcion" FontWeight="Bold" HorizontalAlignment="Left" Margin="27,114,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,145,0,0" TextWrapping="Wrap" Text="{Binding descri}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,145,0,0" TextWrapping="Wrap" Text="{Binding MaterialActual.descri}" VerticalAlignment="Top"/>
         <Label Content="Estado" FontWeight="Bold" HorizontalAlignment="Left" Margin="27,184,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="34,215,0,0" TextWrapping="Wrap" Text="{Binding estados.descri}" VerticalAlignment="Top"/>
-        <Button Content="Retirar" IsEnabled="{Binding Disponible}" HorizontalAlignment="Left" Margin="52,338,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Devolver" IsEnabled="{Binding Prestado}" HorizontalAlignment="Left" Margin="227,338,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,215,0,0" TextWrapping="Wrap" Text="{Binding MaterialActual.estados.descri}" VerticalAlignment="Top"/>
+        <Button Content="Retirar" IsEnabled="{Binding Disponible}" HorizontalAlignment="Left" Margin="52,338,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Devolver" IsEnabled="{Binding Prestado}" HorizontalAlignment="Left" Margin="227,338,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

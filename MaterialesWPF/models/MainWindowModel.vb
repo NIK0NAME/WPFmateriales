@@ -1,11 +1,19 @@
 ﻿
-Imports MaterialesWPF.MaterialesWPF
+
+Imports System.ComponentModel
 
 Public Class MainWindowModel
+    Implements INotifyPropertyChanged
 
     Private mensaje As String
     Private liMateriales As List(Of materiales)
-    Dim db As New DAM_nikolayzabaleta_DEVEntities()
+
+    Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+    Protected Sub OnPropertyChanged(ByVal e As PropertyChangedEventArgs)
+        RaiseEvent PropertyChanged(Me, e)
+    End Sub
+
     Public Property Msg() As String
         Get
             Return mensaje
@@ -24,7 +32,13 @@ Public Class MainWindowModel
 
     Public Sub New(m As String)
         Msg = m
-        liMateriales = db.materiales.Select(Function(u) u).ToList()
+        liMateriales = Module1.db.materiales.Select(Function(u) u).ToList()
     End Sub
+
+    Public Sub updateLista()
+        liMateriales = Module1.db.materiales.Select(Function(u) u).ToList()
+        OnPropertyChanged(New PropertyChangedEventArgs("ListaMateriales"))
+    End Sub
+
 
 End Class

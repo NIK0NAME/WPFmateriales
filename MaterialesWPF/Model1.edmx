@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="MRWBmodel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="seimModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="acciones">
           <Key>
             <PropertyRef Name="idAccion" />
@@ -73,7 +73,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MRWBmodelStoreContainer">
+        <EntityContainer Name="seimModelStoreContainer">
           <EntitySet Name="acciones" EntityType="Self.acciones" Schema="MRWB" store:Type="Tables" />
           <EntitySet Name="estados" EntityType="Self.estados" Schema="MRWB" store:Type="Tables" />
           <EntitySet Name="materiales" EntityType="Self.materiales" Schema="MRWB" store:Type="Tables" />
@@ -95,7 +95,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="MRWBmodel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="seimModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="acciones">
           <Key>
             <PropertyRef Name="idAccion" />
@@ -170,7 +170,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DAM_nikolayzabaleta_DEVEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="seimEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="acciones" EntityType="Self.acciones" />
           <EntitySet Name="estados" EntityType="Self.estados" />
           <EntitySet Name="materiales" EntityType="Self.materiales" />
@@ -193,9 +193,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MRWBmodelStoreContainer" CdmEntityContainer="DAM_nikolayzabaleta_DEVEntities">
+        <EntityContainerMapping StorageEntityContainer="seimModelStoreContainer" CdmEntityContainer="seimEntities">
           <EntitySetMapping Name="acciones">
-            <EntityTypeMapping TypeName="MRWBmodel.acciones">
+            <EntityTypeMapping TypeName="seimModel.acciones">
               <MappingFragment StoreEntitySet="acciones">
                 <ScalarProperty Name="idAccion" ColumnName="idAccion" />
                 <ScalarProperty Name="descri" ColumnName="descri" />
@@ -203,7 +203,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="estados">
-            <EntityTypeMapping TypeName="MRWBmodel.estados">
+            <EntityTypeMapping TypeName="seimModel.estados">
               <MappingFragment StoreEntitySet="estados">
                 <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
                 <ScalarProperty Name="descri" ColumnName="descri" />
@@ -211,7 +211,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="materiales">
-            <EntityTypeMapping TypeName="MRWBmodel.materiales">
+            <EntityTypeMapping TypeName="seimModel.materiales">
               <MappingFragment StoreEntitySet="materiales">
                 <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
                 <ScalarProperty Name="marca" ColumnName="marca" />
@@ -221,7 +221,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="movimientos">
-            <EntityTypeMapping TypeName="MRWBmodel.movimientos">
+            <EntityTypeMapping TypeName="seimModel.movimientos">
               <MappingFragment StoreEntitySet="movimientos">
                 <ScalarProperty Name="idMovimiento" ColumnName="idMovimiento" />
                 <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />

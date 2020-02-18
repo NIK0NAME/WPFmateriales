@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="MRWBmodel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="seimModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="acciones">
     <Key>
       <PropertyRef Name="idAccion" />
@@ -68,7 +68,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="MRWBmodelStoreContainer">
+  <EntityContainer Name="seimModelStoreContainer">
     <EntitySet Name="acciones" EntityType="Self.acciones" Schema="MRWB" store:Type="Tables" />
     <EntitySet Name="estados" EntityType="Self.estados" Schema="MRWB" store:Type="Tables" />
     <EntitySet Name="materiales" EntityType="Self.materiales" Schema="MRWB" store:Type="Tables" />

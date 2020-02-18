@@ -10,17 +10,13 @@
 Imports System
 Imports System.Collections.Generic
 
-Namespace MaterialesWPF
+Partial Public Class movimientos
+    Public Property idMovimiento As Integer
+    Public Property idMaterial As Integer
+    Public Property accion As Integer
+    Public Property fecha As Date
 
-    Partial Public Class movimientos
-        Public Property idMovimiento As Integer
-        Public Property idMaterial As Integer
-        Public Property accion As Integer
-        Public Property fecha As Date
-    
-        Public Overridable Property acciones As acciones
-        Public Overridable Property materiales As materiales
-    
-    End Class
+    Public Overridable Property acciones As acciones
+    Public Overridable Property materiales As materiales
 
-End Namespace
+End Class

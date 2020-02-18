@@ -10,17 +10,13 @@
 Imports System
 Imports System.Collections.Generic
 
-Namespace MaterialesWPF
+Partial Public Class materiales
+    Public Property idMaterial As Integer
+    Public Property marca As String
+    Public Property descri As String
+    Public Property estado As Integer
 
-    Partial Public Class materiales
-        Public Property idMaterial As Integer
-        Public Property marca As String
-        Public Property descri As String
-        Public Property estado As Integer
-    
-        Public Overridable Property estados As estados
-        Public Overridable Property movimientos As ICollection(Of movimientos) = New HashSet(Of movimientos)
-    
-    End Class
+    Public Overridable Property estados As estados
+    Public Overridable Property movimientos As ICollection(Of movimientos) = New HashSet(Of movimientos)
 
-End Namespace
+End Class

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="MRWBmodelStoreContainer" CdmEntityContainer="DAM_nikolayzabaleta_DEVEntities">
+  <EntityContainerMapping StorageEntityContainer="seimModelStoreContainer" CdmEntityContainer="seimEntities">
     <EntitySetMapping Name="acciones">
-      <EntityTypeMapping TypeName="MRWBmodel.acciones">
+      <EntityTypeMapping TypeName="seimModel.acciones">
         <MappingFragment StoreEntitySet="acciones">
           <ScalarProperty Name="idAccion" ColumnName="idAccion" />
           <ScalarProperty Name="descri" ColumnName="descri" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="estados">
-      <EntityTypeMapping TypeName="MRWBmodel.estados">
+      <EntityTypeMapping TypeName="seimModel.estados">
         <MappingFragment StoreEntitySet="estados">
           <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
           <ScalarProperty Name="descri" ColumnName="descri" />
@@ -18,7 +18,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="materiales">
-      <EntityTypeMapping TypeName="MRWBmodel.materiales">
+      <EntityTypeMapping TypeName="seimModel.materiales">
         <MappingFragment StoreEntitySet="materiales">
           <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
           <ScalarProperty Name="marca" ColumnName="marca" />
@@ -28,7 +28,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="movimientos">
-      <EntityTypeMapping TypeName="MRWBmodel.movimientos">
+      <EntityTypeMapping TypeName="seimModel.movimientos">
         <MappingFragment StoreEntitySet="movimientos">
           <ScalarProperty Name="idMovimiento" ColumnName="idMovimiento" />
           <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />

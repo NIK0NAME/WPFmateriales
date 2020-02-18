@@ -23,3 +23,28 @@ D:\Nikolay_Zabaleta\2.DESARROLLO_INTERFACES\UD 5 WPF\WPF1\MaterialesWPF\obj\Debu
 D:\Nikolay_Zabaleta\2.DESARROLLO_INTERFACES\UD 5 WPF\WPF1\MaterialesWPF\obj\Debug\MaterialesWPF.vbproj.CopyComplete
 D:\Nikolay_Zabaleta\2.DESARROLLO_INTERFACES\UD 5 WPF\WPF1\MaterialesWPF\obj\Debug\Window1.g.vb
 D:\Nikolay_Zabaleta\2.DESARROLLO_INTERFACES\UD 5 WPF\WPF1\MaterialesWPF\obj\Debug\Window1.baml
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\MaterialesWPF.exe.config
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\MaterialesWPF.exe
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\MaterialesWPF.pdb
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\MaterialesWPF.xml
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\EntityFramework.dll
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\EntityFramework.SqlServer.dll
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\EntityFramework.xml
+L:\code\c#\WPFmateriales\MaterialesWPF\bin\Debug\EntityFramework.SqlServer.xml
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.vbprojAssemblyReference.cache
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MainWindow.g.vb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\Window1.g.vb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\Application.g.vb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF_Content.g.vb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF_MarkupCompile.cache
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF_MarkupCompile.lref
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MainWindow.baml
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\Window1.baml
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.g.resources
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.Resources.resources
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.vbproj.GenerateResource.cache
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.vbproj.CoreCompileInputs.cache
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.vbproj.CopyComplete
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.exe
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.xml
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.pdb

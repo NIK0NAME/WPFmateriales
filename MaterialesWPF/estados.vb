@@ -10,14 +10,10 @@
 Imports System
 Imports System.Collections.Generic
 
-Namespace MaterialesWPF
+Partial Public Class estados
+    Public Property IdEstado As Integer
+    Public Property descri As String
 
-    Partial Public Class estados
-        Public Property IdEstado As Integer
-        Public Property descri As String
-    
-        Public Overridable Property materiales As ICollection(Of materiales) = New HashSet(Of materiales)
-    
-    End Class
+    Public Overridable Property materiales As ICollection(Of materiales) = New HashSet(Of materiales)
 
-End Namespace
+End Class

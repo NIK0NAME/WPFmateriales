@@ -1,4 +1,4 @@
-﻿Imports MaterialesWPF.MaterialesWPF
+﻿
 Class MainWindow
     Dim windowModel As MainWindowModel
 
@@ -13,9 +13,10 @@ Class MainWindow
 
     Private Sub ListBox_MouseDoubleClick(sender As Object, e As MouseButtonEventArgs)
         Dim m As materiales = liMats.SelectedItem
-        Dim f2 As New Window1()
+
         Dim model2 As New Window2Model(m)
-        f2.DataContext = model2
+        Dim f2 As New Window1(model2)
         f2.ShowDialog()
+        windowModel.updateLista()
     End Sub
 End Class

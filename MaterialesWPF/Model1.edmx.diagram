@@ -4,14 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="92963a0ffcbc4660bfdd9b5731e3b097" Name="Diagram1">
-        <EntityTypeShape EntityType="MRWBmodel.acciones" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MRWBmodel.estados" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MRWBmodel.materiales" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="MRWBmodel.movimientos" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="MRWBmodel.FK_movimientos_acciones" ManuallyRouted="false" />
-        <AssociationConnector Association="MRWBmodel.FK_materiales_estados" ManuallyRouted="false" />
-        <AssociationConnector Association="MRWBmodel.FK_movimientos_materiales" ManuallyRouted="false" />
+      <Diagram DiagramId="a172915d286c40e782bf6d3b1ca5c2d8" Name="Diagram1">
+        <EntityTypeShape EntityType="seimModel.acciones" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="seimModel.estados" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="seimModel.materiales" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="seimModel.movimientos" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="seimModel.FK_movimientos_acciones" ManuallyRouted="false" />
+        <AssociationConnector Association="seimModel.FK_materiales_estados" ManuallyRouted="false" />
+        <AssociationConnector Association="seimModel.FK_movimientos_materiales" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

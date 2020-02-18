@@ -11,24 +11,20 @@ Imports System
 Imports System.Data.Entity
 Imports System.Data.Entity.Infrastructure
 
-Namespace MaterialesWPF
+Partial Public Class seimEntities
+    Inherits DbContext
 
-    Partial Public Class DAM_nikolayzabaleta_DEVEntities
-        Inherits DbContext
-    
-        Public Sub New()
-            MyBase.New("name=DAM_nikolayzabaleta_DEVEntities")
-        End Sub
-    
-        Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
-            Throw New UnintentionalCodeFirstException()
-        End Sub
-    
-        Public Overridable Property acciones() As DbSet(Of acciones)
-        Public Overridable Property estados() As DbSet(Of estados)
-        Public Overridable Property materiales() As DbSet(Of materiales)
-        Public Overridable Property movimientos() As DbSet(Of movimientos)
-    
-    End Class
+    Public Sub New()
+        MyBase.New("name=seimEntities")
+    End Sub
 
-End Namespace
+    Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
+        Throw New UnintentionalCodeFirstException()
+    End Sub
+
+    Public Overridable Property acciones() As DbSet(Of acciones)
+    Public Overridable Property estados() As DbSet(Of estados)
+    Public Overridable Property materiales() As DbSet(Of materiales)
+    Public Overridable Property movimientos() As DbSet(Of movimientos)
+
+End Class
