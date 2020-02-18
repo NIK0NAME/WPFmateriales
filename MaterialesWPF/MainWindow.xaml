@@ -1,0 +1,29 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialesWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="627.451" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Ver Resumen" HorizontalAlignment="Left" Margin="48,32,0,0" VerticalAlignment="Top" Width="98" Height="44" Click="Button_Click"/>
+        <ListBox Name="liMats" SelectedValuePath="{Binding material}" ItemsSource="{Binding ListaMateriales}" HorizontalAlignment="Left" Height="281" Margin="48,97,0,0" VerticalAlignment="Top" Width="520" MouseDoubleClick="ListBox_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock> 
+                        <TextBlock FontWeight="Bold" Text="Marca:" />
+                        <TextBlock Text="{Binding marca}" />
+                        <TextBlock FontWeight="Bold" Text="Descripcion:" />
+                        <TextBlock Text="{Binding descri}" />
+                        <TextBlock FontWeight="Bold" Text="Estado:" />
+                        <TextBlock Text="{Binding estados.descri}" />
+                    </TextBlock>
+                    
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="{Binding Msg}" HorizontalAlignment="Left" Margin="151,50,0,0" VerticalAlignment="Top" Width="417"/>
+
+    </Grid>
+</Window>

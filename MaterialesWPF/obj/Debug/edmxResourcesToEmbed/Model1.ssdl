@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MRWBmodel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acciones">
+    <Key>
+      <PropertyRef Name="idAccion" />
+    </Key>
+    <Property Name="idAccion" Type="int" Nullable="false" />
+    <Property Name="descri" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="estados">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="int" Nullable="false" />
+    <Property Name="descri" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="materiales">
+    <Key>
+      <PropertyRef Name="idMaterial" />
+    </Key>
+    <Property Name="idMaterial" Type="int" Nullable="false" />
+    <Property Name="marca" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descri" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="estado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="movimientos">
+    <Key>
+      <PropertyRef Name="idMovimiento" />
+    </Key>
+    <Property Name="idMovimiento" Type="int" Nullable="false" />
+    <Property Name="idMaterial" Type="int" Nullable="false" />
+    <Property Name="accion" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_materiales_estados">
+    <End Role="estados" Type="Self.estados" Multiplicity="1" />
+    <End Role="materiales" Type="Self.materiales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados">
+        <PropertyRef Name="IdEstado" />
+      </Principal>
+      <Dependent Role="materiales">
+        <PropertyRef Name="estado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movimientos_acciones">
+    <End Role="acciones" Type="Self.acciones" Multiplicity="1" />
+    <End Role="movimientos" Type="Self.movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="acciones">
+        <PropertyRef Name="idAccion" />
+      </Principal>
+      <Dependent Role="movimientos">
+        <PropertyRef Name="idMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_movimientos_materiales">
+    <End Role="materiales" Type="Self.materiales" Multiplicity="1" />
+    <End Role="movimientos" Type="Self.movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="materiales">
+        <PropertyRef Name="idMaterial" />
+      </Principal>
+      <Dependent Role="movimientos">
+        <PropertyRef Name="idMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MRWBmodelStoreContainer">
+    <EntitySet Name="acciones" EntityType="Self.acciones" Schema="MRWB" store:Type="Tables" />
+    <EntitySet Name="estados" EntityType="Self.estados" Schema="MRWB" store:Type="Tables" />
+    <EntitySet Name="materiales" EntityType="Self.materiales" Schema="MRWB" store:Type="Tables" />
+    <EntitySet Name="movimientos" EntityType="Self.movimientos" Schema="MRWB" store:Type="Tables" />
+    <AssociationSet Name="FK_materiales_estados" Association="Self.FK_materiales_estados">
+      <End Role="estados" EntitySet="estados" />
+      <End Role="materiales" EntitySet="materiales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movimientos_acciones" Association="Self.FK_movimientos_acciones">
+      <End Role="acciones" EntitySet="acciones" />
+      <End Role="movimientos" EntitySet="movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_movimientos_materiales" Association="Self.FK_movimientos_materiales">
+      <End Role="materiales" EntitySet="materiales" />
+      <End Role="movimientos" EntitySet="movimientos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

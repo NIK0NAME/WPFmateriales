@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MRWBmodelStoreContainer" CdmEntityContainer="DAM_nikolayzabaleta_DEVEntities">
+    <EntitySetMapping Name="acciones">
+      <EntityTypeMapping TypeName="MRWBmodel.acciones">
+        <MappingFragment StoreEntitySet="acciones">
+          <ScalarProperty Name="idAccion" ColumnName="idAccion" />
+          <ScalarProperty Name="descri" ColumnName="descri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estados">
+      <EntityTypeMapping TypeName="MRWBmodel.estados">
+        <MappingFragment StoreEntitySet="estados">
+          <ScalarProperty Name="IdEstado" ColumnName="IdEstado" />
+          <ScalarProperty Name="descri" ColumnName="descri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="materiales">
+      <EntityTypeMapping TypeName="MRWBmodel.materiales">
+        <MappingFragment StoreEntitySet="materiales">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="descri" ColumnName="descri" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movimientos">
+      <EntityTypeMapping TypeName="MRWBmodel.movimientos">
+        <MappingFragment StoreEntitySet="movimientos">
+          <ScalarProperty Name="idMovimiento" ColumnName="idMovimiento" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
