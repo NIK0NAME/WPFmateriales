@@ -80,6 +80,9 @@
     <Compile Include="acciones.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddMaterialWindow.xaml.vb">
+      <DependentUpon>AddMaterialWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="estados.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -101,6 +104,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="models\AddMaterialModel.vb" />
     <Compile Include="models\Window2Model.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="movimientos.vb">
@@ -109,6 +113,10 @@
     <Compile Include="Window1.xaml.vb">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddMaterialWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

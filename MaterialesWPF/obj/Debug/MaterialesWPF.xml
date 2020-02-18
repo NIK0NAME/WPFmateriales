@@ -54,6 +54,16 @@ MaterialesWPF
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:MaterialesWPF.AddMaterialWindow">
+<summary>
+AddMaterialWindow
+</summary>
+</member>
+<member name="M:MaterialesWPF.AddMaterialWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 <member name="T:MaterialesWPF.Window1">
 <summary>
 Window1

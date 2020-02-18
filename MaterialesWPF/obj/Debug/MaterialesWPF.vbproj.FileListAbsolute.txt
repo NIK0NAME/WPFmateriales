@@ -48,3 +48,5 @@ L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.vbproj.CopyComple
 L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.exe
 L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.xml
 L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\MaterialesWPF.pdb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\AddMaterialWindow.g.vb
+L:\code\c#\WPFmateriales\MaterialesWPF\obj\Debug\AddMaterialWindow.baml

@@ -1,0 +1,17 @@
+﻿<Window x:Class="AddMaterialWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialesWPF"
+        mc:Ignorable="d"
+        Title="AddMaterialWindow" Height="256.5" Width="429.5">
+    <Grid>
+        <Button x:Name="button" Content="Add" HorizontalAlignment="Left" Margin="317,132,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="Marca" HorizontalAlignment="Left" Margin="73,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="73,87,0,0" TextWrapping="Wrap" Text="{Binding Marca}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="22" Margin="73,160,0,0" TextWrapping="Wrap" Text="{Binding Desc}" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Desc" HorizontalAlignment="Left" Margin="73,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,0.404"/>
+
+    </Grid>
+</Window>

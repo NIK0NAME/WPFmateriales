@@ -19,4 +19,10 @@ Class MainWindow
         f2.ShowDialog()
         windowModel.updateLista()
     End Sub
+
+    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+        Dim f3 As New AddMaterialWindow()
+        f3.ShowDialog()
+        windowModel.updateLista()
+    End Sub
 End Class

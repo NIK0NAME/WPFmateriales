@@ -19,11 +19,11 @@
                         <TextBlock FontWeight="Bold" Text="Estado:" />
                         <TextBlock Text="{Binding estados.descri}" />
                     </TextBlock>
-                    
+
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Label Content="{Binding Msg}" HorizontalAlignment="Left" Margin="151,50,0,0" VerticalAlignment="Top" Width="417"/>
+        <Button Content="Añadir material" HorizontalAlignment="Left" Margin="162,32,0,0" VerticalAlignment="Top" Width="121" Height="44" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
