@@ -6,24 +6,31 @@
         xmlns:local="clr-namespace:MaterialesWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="627.451" Loaded="Window_Loaded">
-    <Grid>
-        <Button Content="Ver Resumen" HorizontalAlignment="Left" Margin="48,32,0,0" VerticalAlignment="Top" Width="98" Height="44" Click="Button_Click"/>
-        <ListBox Name="liMats" SelectedValuePath="{Binding material}" ItemsSource="{Binding ListaMateriales}" HorizontalAlignment="Left" Height="281" Margin="48,97,0,0" VerticalAlignment="Top" Width="520" MouseDoubleClick="ListBox_MouseDoubleClick">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock> 
-                        <TextBlock FontWeight="Bold" Text="Marca:" />
-                        <TextBlock Text="{Binding marca}" />
-                        <TextBlock FontWeight="Bold" Text="Descripcion:" />
-                        <TextBlock Text="{Binding descri}" />
-                        <TextBlock FontWeight="Bold" Text="Estado:" />
-                        <TextBlock Text="{Binding estados.descri}" />
-                    </TextBlock>
-
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <Button Content="Añadir material" HorizontalAlignment="Left" Margin="162,32,0,0" VerticalAlignment="Top" Width="121" Height="44" Click="Button_Click_1"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="59*"/>
+                <RowDefinition Height="130*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Ver Resumen" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="98" Height="44" Click="Button_Click"/>
+            <ListBox Name="liMats" SelectedValuePath="{Binding material}" ItemsSource="{Binding ListaMateriales}" Height="281" Margin="5,54,5,5" Width="520" MouseDoubleClick="ListBox_MouseDoubleClick" Background="{x:Null}" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel Orientation="Horizontal" Margin="15px" Background="{x:Null}">
+                            <WrapPanel Orientation="Horizontal" MinWidth="0">
+                                <TextBlock FontWeight="Bold" Text="Marca:" Margin="0,0,5,0"/>
+                                <TextBlock Text="{Binding marca}" Margin="0,0,20,0" />
+                            </WrapPanel>
+                            <TextBlock FontWeight="Bold" Text="Descripcion:" Margin="0,0,5,0"/>
+                            <TextBlock Text="{Binding descri}" Margin="0,0,20,0"/>
+                            <TextBlock FontWeight="Bold" Text="Estado:" Margin="0,0,5,0"/>
+                            <TextBlock Text="{Binding estados.descri}" />
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Name="add_button" IsEnabled="False" Content="Añadir material" HorizontalAlignment="Left" Margin="108,5,0,0" VerticalAlignment="Top" Width="121" Height="44" Click="Button_Click_1"/>
+        </Grid>
 
     </Grid>
 </Window>
